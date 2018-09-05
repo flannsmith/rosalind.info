@@ -28,7 +28,7 @@ def profileToConsensus(profile):
             out += 'G'
         elif profile[3][i] == m:
             out += 'T'
-    return out 
+    return out + '\n'
 
 
 text = [line.strip() for line in open(sys.argv[1])]
@@ -41,7 +41,7 @@ while i < len(text):
     i += 1
 profile = dnaToProfile([text[i] for i in range(1, len(text), 2)])
 print (profileToConsensus(profile))
-print ('A:  ' + str(profile[0])[1:].replace(']', '').replace(',', ''))
-print ('C:  ' + str(profile[1])[1:].replace(']', '').replace(',', ''))
-print ('G:  ' + str(profile[2])[1:].replace(']', '').replace(',', ''))
-print ('T:  ' + str(profile[3])[1:].replace(']', '').replace(',', ''))
+print ('A: ' + str(profile[0])[1:].replace(']', '').replace(',', ''))
+print ('C: ' + str(profile[1])[1:].replace(']', '').replace(',', ''))
+print ('G: ' + str(profile[2])[1:].replace(']', '').replace(',', ''))
+print ('T: ' + str(profile[3])[1:].replace(']', '').replace(',', ''))
