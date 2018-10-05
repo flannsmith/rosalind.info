@@ -45,3 +45,4 @@ print ('A: ' + str(profile[0])[1:].replace(']', '').replace(',', ''))
 print ('C: ' + str(profile[1])[1:].replace(']', '').replace(',', ''))
 print ('G: ' + str(profile[2])[1:].replace(']', '').replace(',', ''))
 print ('T: ' + str(profile[3])[1:].replace(']', '').replace(',', ''))
+
